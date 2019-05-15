@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo hello world'
+        sh 'make run_tests clean'
       }
     }
   }
