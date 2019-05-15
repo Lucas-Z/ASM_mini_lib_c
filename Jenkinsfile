@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'make run_tests clean'
+        sh ''' 
+        gcc main.c -o test
+        ./test
+        '''
       }
     }
   }
